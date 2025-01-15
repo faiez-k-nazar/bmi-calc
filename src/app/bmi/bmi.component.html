@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="col-2"></div>
+    <div style="background-color: blanchedalmond; ; " class="col-8 border shadow p-4 m-5">
+        <div style="display: flex;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BMI_chart.png/640px-BMI_chart.png" alt="" width="50px"> <span><p style="font-size:x-large; font-weight: bolder;" class="ms-3 ">BMI Calculator</p></span>
+        </div>
+        <form class="row row-cols-lg-auto g-3 align-items-center mt-5">
+            <div class="col-12">
+              <label class="" for="inlineFormInputGroupUsername">Enter Your Age</label>
+              <div class="input-group">
+                <div class="input-group-text"></div>
+                <input  [(ngModel)]="age" name="age"
+                  type="text"
+                  class="form-control"
+                  id="inlineFormInputGroupUsername"
+                  placeholder="Age"
+                />
+              </div>
+            </div>
+          
+            <!-- <div class="col-12">
+                <label class="" for="inlineFormInputGroupUsername">Select Gender</label>
+              <select data-mdb-select-init class="select" >
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+               
+                
+              </select>
+            </div> -->
+            <div class="col-12">
+                
+                <label class="" for="inlineFormSelectPref">Gender</label>
+                <select data-mdb-select-init class="select border border-2 rounded m-2">
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                 
+                </select>
+              </div>
+          
+            <div class="col-12 ms-2">
+                <label class="ms-2" for="inlineFormInputGroupUsername">Enter Weight</label>
+                <div class="input-group">
+                  <div class="input-group-text"></div>
+                  <input  [(ngModel)]="weight" name="weight"
+                    type="text"
+                    class="form-control"
+                    id="inlineFormInputGroupUsername"
+                    placeholder="Weight in kg"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 ms-2">
+                <label class="" for="inlineFormInputGroupUsername">Enter Height</label>
+                <div class="input-group">
+                  <div class="input-group-text"></div>
+                  <input [(ngModel)]="height" name="height"
+                    type="text"
+                    class="form-control"
+                    id="inlineFormInputGroupUsername"
+                    placeholder="Height in cm"
+                  />
+                </div>
+              </div>
+          
+            
+          </form>
+          <div class="text-center m-4">
+            <button (click)="onClick()" data-mdb-ripple-init type="submit" class="btn btn-outline-success">Calculate</button>
+            <span>
+                <button (click)="no()" data-mdb-ripple-init type="submit" class="btn btn-outline-secondary ms-3">Clear</button>
+            </span>
+          </div>
+
+        
+            <div [innerHTML]="inner" >
+
+            </div>
+         
+            
+          
+          
+    </div>
+ 
+    <div class="col-2"></div>
+</div>

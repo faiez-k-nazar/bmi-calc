@@ -1,0 +1,24 @@
+<div style="margin-left: 550px; margin-top: 100px; margin-bottom: 80px;" class="row text-center ">
+    
+ 
+        <form class="form">
+            <p class="title">Sign In </p>
+            <p class="message">Login now and get full access to our app. </p>
+                  
+                    
+            <label>
+                <input [(ngModel)]="email" name="email" required="" placeholder="" type="email" class="input">
+                <span>Email</span>
+            </label> 
+                
+            <label>
+                <input [(ngModel)]="pswd" name="pswd" required="" placeholder="" type="password" class="input">
+                <span>Password</span>
+            </label>
+            
+            <button (click)="login()" class="submit">Login</button>
+            <p class="signin">Don't have an acount ? <a href="/register">Signup</a> </p>
+        </form>
+    </div>
+
+
